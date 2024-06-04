@@ -15,20 +15,130 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<!-- Bootstrap CSS -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Title-Here</title>
+		<title>My Landing Page</title>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
+		<nav id="main-nav">
+			<div class="container">
+				<div class="logo">
+					<img
+						src="https://randomuser.me/api/portraits/men/76.jpg"
+						alt="Picture of a Random Person"
+					/>
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
 
+		<header>
+			<div class="container">
+				<button id="toggle" class="toggle">
+					<i class="fa fa-bars fa-2x"></i>
+				</button>
+				<h1>My landing Page</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ipsam
+					voluptas perferendis dolorum esse odio.
+				</p>
+
+				<button class="cta-btn" id="open">Sign Up</button>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<h2>What is this landing page about?</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque
+					quo minus, esse debitis reprehenderit aliquam eligendi sunt,
+					distinctio nihil voluptate sed eum repellendus deserunt ex veritatis.
+					Officiis distinctio aut modi architecto eum voluptas dolor.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit unde
+					iusto dolores non. Voluptatibus dolorum aspernatur totam ipsam quo
+					itaque illum nostrum consectetur rerum odit?
+				</p>
+
+				<h2>Tell Me More...</h2>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore,
+					cumque quibusdam aliquam tenetur aliquid quia non mollitia saepe ab ut
+					enim voluptates repudiandae perspiciatis voluptate debitis expedita,
+					veniam laudantium. Iusto temporibus molestias ab. Laudantium
+					praesentium unde consequuntur itaque nesciunt harum.
+				</p>
+
+				<h2>Benefits</h2>
+				<ul>
+					<li>Lifetime Access</li>
+					<li>30 Day Money Back</li>
+					<li>Tailored Customer Support</li>
+				</ul>
+
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic error
+					molestias est, accusantium quaerat illo sequi praesentium animi totam
+					rem, dignissimos earum obcaecati voluptatem dolore aut ullam, maiores
+					modi sint nemo expedita veritatis deserunt iusto! Facere ex alias
+					sapiente. Eveniet aspernatur tempore, eius culpa ipsa minima molestiae
+					debitis consequuntur explicabo blanditiis illum hic earum dignissimos
+					nisi fuga odit reiciendis repellat qui iusto! Nihil ea enim officiis
+					molestiae, neque eius excepturi obcaecati sunt. Cupiditate, dolor
+					fugiat.
+				</p>
+			</div>
+		</main>
+
+		<!--Modal-->
+		<div class="modal-container" id="modal">
+			<div class="modal">
+				<button class="close-btn" id="close">
+					<i class="fa fa-times"></i>
+				</button>
+
+				<div class="modal-header">
+					<h3>Sing Up</h3>
+				</div>
+
+				<div class="modal-content">
+					<p>Register with us to get Offers, Support and More...</p>
+					<form action="modal-form">
+						<div>
+							<label for="name">Name</label>
+							<input type="text" id="name" placeholder="Enter Name" required>
+						</div>
+
+						<div>
+							<label for="name">Email</label>
+							<input type="email" id="email" placeholder="Enter Email" required>
+						</div>
+
+						<div>
+							<label for="name">Password</label>
+							<input type="password" id="password" placeholder="Enter Password" required>
+						</div>
+
+						<div>
+							<label for="name">Confirm Password</label>
+							<input type="password" id="password2" placeholder="Confirm Password" required>
+						</div>
+
+						<input type="submit" value="Submit" class="btn-submit">
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
 		<!-- Bootstrap JS & Popper JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
