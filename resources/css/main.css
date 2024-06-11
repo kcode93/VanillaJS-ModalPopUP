@@ -17,6 +17,13 @@ body {
 	margin: 0;
 }
 
+body.show-nav {
+	/* width of nav */
+	transform: translateX(var(--nav-width));
+	margin: 0;
+	transition: transform 0.5s ease;
+}
+
 nav {
 	background-color: var(--primary-color);
 	border-right: 2px solid var(--nav-border);
