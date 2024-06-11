@@ -2,8 +2,10 @@
 	--modal-duration: 1s;
 	--primary-color: #30336b;
 	--secondary-color: #be2edd;
+	--link-color: #fff;
 	--nav-width: 350px;
 	--nav-height: 100vh;
+	--nav-border: rgba(200, 200, 200, 0.1);
 }
 
 * {
@@ -16,7 +18,7 @@ body {
 
 nav {
 	background-color: var(--primary-color);
-	border-right: 2px solid rgba(200, 200, 200, 0.1);
+	border-right: 2px solid var(--nav-border);
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -28,12 +30,46 @@ nav {
 }
 
 nav .logo {
-	padding: 30px 0;
+	--nav_logo__padding: 30px 0;
+	padding: var(--nav_logo__padding);
 	text-align: center;
 }
 
 nav .logo img {
-	height: 75px;
-	width: 75px;
-	border-radius: 50%;
+	--nav_logo_img__height: 120px;
+	--nav_logo_img__width: 120px;
+	--nav_logo_img__border-radius: 50%;
+	height: var(--nav_logo_img__height);
+	width: var(--nav_logo_img__width);
+	border-radius: var(--nav_logo_img__border-radius);
+}
+
+nav ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0;
+}
+
+nav ul li {
+	border-bottom: 2px solid var(--nav-border);
+	padding: 15px;
+	transition: all 0.5s ease-in-out;
+}
+
+nav ul li:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
+
+nav ul li:first-of-type {
+	border-top: 2px solid var(--nav-border);
+}
+
+nav ul li a {
+	--nav-link__padding: 0.55rem;
+	display: block;
+	padding: var(--nav-link__padding);
+	color: var(--link-color);
+	text-decoration: none;
+	/* background-color: yellow; */
 }
