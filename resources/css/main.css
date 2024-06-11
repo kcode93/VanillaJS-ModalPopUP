@@ -140,6 +140,10 @@ input[type='submit'] {
 	right: 0;
 }
 
+.modal-container.show-modal {
+	display: block;
+}
+
 .modal {
 	background-color: #fff;
 	border-radius: 5px;
@@ -151,6 +155,8 @@ input[type='submit'] {
 	transform: translate(-50%, -50%);
 	max-width: 100%;
 	width: 500px;
+	animation-name: modalOpen;
+	animation-duration: var(--modal-duration);
 }
 
 .modal-header {
@@ -188,4 +194,14 @@ input[type='submit'] {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+@keyframes modalOpen {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
